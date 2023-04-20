@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="w-full fixed">
       <nav id="top" class="bg-[#434343] text-white">
         <div class="py-2 px-2 flex justify-between items-center m-auto">
           <div class="">
@@ -45,6 +45,39 @@
           </div>
         </div>
       </nav>
+      <!-- mobile dropdown menu -->
+      <div
+        id="dropDown"
+        style="display: none"
+        class="z-10 absolute right-1 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+      >
+        <ul
+          class="py-2 text-sm text-gray-700 dark:text-gray-200"
+          aria-labelledby="dropdownDefaultButton"
+        >
+          <li>
+            <a
+              href="#empathy"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >Empathy</a
+            >
+          </li>
+          <li>
+            <a
+              href="#define"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >Define</a
+            >
+          </li>
+          <li>
+            <a
+              href="#prototype"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >Prototype</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <img
@@ -54,12 +87,12 @@
     />
 
     <!-- Foating Navbar items -->
-    <div class="">
+    <div class="hidden sm:block">
       <ur class="fixed text-l text-white grid grid-cols-1">
         <ul>
           <a
             href="#empathy"
-            class="nline-bolck inline-bolck w-28 h-12 bg-teal-700 border-b border-white hover:bg-[#d9d9d9] hover:text-teal-600 flex justify-center items-center"
+            class="inline-bolck w-28 h-12 bg-teal-700 border-b border-white hover:bg-[#d9d9d9] hover:text-teal-600 flex justify-center items-center"
           >
             Empathy
           </a>
@@ -67,7 +100,7 @@
         <ul>
           <a
             href="#define"
-            class="nline-bolck inline-bolck w-28 h-12 bg-teal-700 border-b border-white hover:bg-[#d9d9d9] hover:text-teal-600 flex justify-center items-center"
+            class="inline-bolck w-28 h-12 bg-teal-700 border-b border-white hover:bg-[#d9d9d9] hover:text-teal-600 flex justify-center items-center"
           >
             Define
           </a>
@@ -75,7 +108,7 @@
         <ul>
           <a
             href="#prototype"
-            class="nline-bolck inline-bolck w-28 h-12 bg-teal-700 border-b border-white hover:bg-[#d9d9d9] hover:text-teal-600 flex justify-center items-center"
+            class="inline-bolck w-28 h-12 bg-teal-700 border-b border-white hover:bg-[#d9d9d9] hover:text-teal-600 flex justify-center items-center"
           >
             Prototype
           </a>
@@ -117,7 +150,7 @@
         <article id="background" class="my-9 py-6 sm:px-6 lg:px-12 text-black">
           <h3 class="mb-6 text-2xl font-semibold">1. Background</h3>
 
-          <p class="text-xl mb-3">
+          <p class="text-l md:text-xl mb-3">
             <span class="font-semibold text-teal-700">
               Mental health issues have become a significant and growing concern
               for university students.</span
@@ -130,8 +163,8 @@
             health issues, the assessment has shown that the majority of them
             (67%) never asked for professional support.
           </p>
-          <img rc="./images/chats.png" alt="charts" />
-          <p class="mb-3 text-xl">
+          <img src="./images/chats.png" alt="charts" />
+          <p class="mb-3 text-l md:text-xl">
             University students can be detrimentally impacted by mental health
             issues on their academic performance and life satisfaction (Arslan
             et al., 2009). The most common mental health problems in students
